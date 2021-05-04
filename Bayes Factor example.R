@@ -26,7 +26,7 @@ ggplot(d1, aes(x=Condition, y=Power))  +
 # Looks like there could be a modest difference
 
 # Traditional t-test
-t.test(Power~Condition, data=d1)
+t.test(Power~Condition, data=d1, var.equal=TRUE)
 
 # Bayes factor version t-test
 # BF for the alternative
